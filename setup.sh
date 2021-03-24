@@ -38,8 +38,8 @@ git clone https://github.com/sdenel/fill-yaml-from-env
 
 echo "Installing docker-compose"
 # See https://wiki.alpinelinux.org/wiki/Docker#Docker_Compose
-apk add python-dev libffi-dev openssl-dev gcc libc-dev make
-pip install docker-compose
+apk add py-pip python3-dev libffi-dev openssl-dev gcc libc-dev make
+pip3 install docker-compose
 # TODO: apk remove python-dev libffi-dev openssl-dev gcc libc-dev make
 
 pip install j2cli
