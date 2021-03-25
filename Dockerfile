@@ -1,4 +1,4 @@
-FROM docker:latest
+FROM docker:19-dind
  # Docker image is based on Alpine, and Docker is relatively complicated to install afterward 
 COPY setup.sh /opt/setup.sh
 RUN chmod +x /opt/setup.sh && /opt/setup.sh
